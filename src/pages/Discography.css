@@ -1,0 +1,60 @@
+#spotify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    border-radius: 12px;
+}
+
+.moreSoon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: var(--gold3);
+    overflow: hidden;
+    transition: 1s;
+    animation: textAnimation 2s infinite;
+}
+
+@keyframes textAnimation {
+    from {
+        text-shadow: 0 0 var(--gold3), 0 1.2em #fff;
+    }
+    to {
+        text-shadow: 0 -1.2em var(--gold3), 0 0 #fff;
+    }
+}
+
+/* Responsivity */
+
+@media (width = 2560px) {
+    #spotify {
+        gap: 200px;
+    }
+
+    .moreSoon {
+        font-size: 48px;
+    }
+}
+
+@media (width <= 426px) {
+    #spotify {
+        flex-wrap: wrap;
+    }
+
+    #spotify:nth-child(1) {
+        width: 100%;
+    }
+    
+    iframe {
+        width: 100%;
+    }
+
+    .moreSoon {
+        padding: auto;
+    }
+}
+  

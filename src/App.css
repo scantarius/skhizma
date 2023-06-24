@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+:root {
+  --purple: #22223b;
+  --gold1: #a67c00;
+  --gold2: #bf9b30;
+  --gold3: #ffbf00;
+  --gold4: #ffcf40;
+  --gold5: #ffdc73;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { 
+  background-color: var(--purple); 
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.title {
+  background: -webkit-linear-gradient(left, var(--gold1), var(--gold3) , var(--gold5));
+  background-size: 1600px 200px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 50px 0 50px 50px;
+  font-size: 48px;
+  font-family: 'Gochi Hand', sans-serif;
+  animation: titleAnimation 2s infinite forwards;
+}
+
+@keyframes titleAnimation {
+  0% {
+      background-position: 0 1600px;
+  }
+  100% {
+      background-position: 1600px 0;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  margin-right: 50px;
+  gap: 60px;
+  font-size: 32px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: var(--gold1);
+}
+
+.menu a {
+  position: relative;
+}
+
+.menu a::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  background: var(--gold2);
+  transition: width .2s;
+}
+
+.menu a:hover:after {
+  width: 100%;
+}
+
+.active {
+  position: relative;
+}
+
+.active::before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  background: var(--gold2);
+  width: 100%;
+}
+
+/* Home */
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  margin: 50px;
+}
+
+.about {
+  display: flex;
+  text-align: left;
+  position: relative;
+  border: 2px solid var(--gold3);
+  height: auto;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      var(--gold3), 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+}
+
+.about h2 {
+  margin: 50px 50px 0 50px;
+  color: #fff;
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.readMore {
+  position: absolute;
+  bottom: -20%;
+  right: 5%;
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.readMore::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  background: var(--gold2);
+  transition: width .2s;
+}
+
+.readMore:hover:after {
+  width: 100%;
+}
+
+.logo {
+  width: 350px;
+  height: 350px;
+  z-index: -1;
+}
+
+/* Footer */
+
+footer {
+  margin: 10px 20px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+footer h2 {
+  margin-right: 10px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Responsivity */
+
+@media (width = 2560px) {
+  .menu {
+    font-size: 48px;
+  }
+
+  main {
+    margin: 300px 200px auto 200px;
+    gap: 30%;
+  }
+
+  .about h2,
+  .about a {
+    font-size: 48px;
+  }
+
+  .logo {
+    transform: scale(1.3);
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 200px;
+    transform: scale(1.3);
+  }
+}
+
+@media (width = 1440px) {
+  footer {
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+  }
+}
+
+
+@media (width = 1024px) {
+  .menu {
+    margin: auto;
+  }
+
+  .logo {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+  footer {
+    margin-top: 100px;
+  }
+}
+
+@media (width <= 768px) {
+  .menu {
+    justify-content: center;
+    margin-left: 50px;
+  }
+
+  main {
+    width: 80%;
+    flex-wrap: wrap;
+    margin: auto;
+    height: auto;
+    margin-top: 100px;
+  }
+
+  .logo {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+  footer {
+    margin-top: 100px;
+  }
+}
+
+@media (width < 426px) {
+  footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    transform: scale(0.6);
+  }
+}

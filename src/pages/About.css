@@ -1,0 +1,190 @@
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutWrapper {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 70vh;
+    position: relative;
+}
+
+.groupPhoto {
+    max-width: 100%;
+    position: absolute;
+    --angle: 0deg;
+	border: 4px solid;
+	border-image: linear-gradient(var(--angle), var(--gold3), var(--gold4), var(--purple)) 1;
+	animation: 5s rotate linear infinite;
+}
+
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.hoverMe {
+    visibility: visible;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Lobster', sans-serif;
+    transition: all 1s;
+}
+
+.aboutWrapper h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.cirithUngol,
+.highwaystarMagazine {
+    outline: #fff;
+    text-shadow: -1px -1px var(--gold3), -1px 1px var(--gold3), -1px 1px 0 var(--gold3);
+}
+
+.aboutDescriptionOpen {
+    max-width: 90%;
+    position: absolute;
+    top: 10px;
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1s;
+}
+
+.aboutDescriptionClosed {
+    max-width: 90%;
+    position: absolute;
+    top: 10px;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+#about:hover {
+    color: #fff;
+    .hoverMe {
+        opacity: 0;
+        transition: all 1s;
+    }
+}
+
+/* Responsivity */
+
+@media (width = 2560px) {
+    #about {
+        margin-top: 200px;
+    }
+
+    .aboutDescriptionOpen,
+    .aboutDescriptionClosed {
+        top: 8%;
+        font-size: 38px;
+    }
+
+    .hoverMe {
+        font-size: 48px;
+        top: 80%;
+    }
+}
+
+@media (width <= 1440px) {
+    #about {
+        margin-top: 50px;
+    }
+
+    .aboutDescriptionOpen,
+    .aboutDescriptionClosed {
+        top: 8%;
+        font-size: 20px;
+    }
+
+    .hoverMe {
+        font-size: 28px;
+        top: 80%;
+    }
+}
+
+
+@media (width <= 1024px) {
+    #about {
+        margin-top: 50px;
+    }
+
+    .aboutDescriptionOpen,
+    .aboutDescriptionClosed {
+        top: 4%;
+        font-size: 16px;
+    }
+
+    .hoverMe {
+        font-size: 20px;
+        top: 70%;
+    }
+}
+
+@media (width = 768px) {
+    #about {
+        margin-top: 50px;
+    }
+
+    .aboutWrapper {
+        width: 100%;
+    }
+
+    .aboutDescriptionOpen,
+    .aboutDescriptionClosed {
+        top: 4%;
+        font-size: 20px;
+    }
+
+    .hoverMe {
+        font-size: 24px;
+        top: 90%;
+    }
+}
+
+@media (width <= 426px) {
+    #about {
+        margin-top: 50px;
+        color: #fff;
+    }
+
+    .aboutWrapper {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .aboutDescriptionOpen,
+    .aboutDescriptionClosed {
+        max-width: 90%;
+        top: 10px;
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+        transition: all 1s;
+        top: 40%;
+        font-size: 20px;
+    }
+
+    .hoverMe {
+        visibility: hidden;
+    }
+}
+  
