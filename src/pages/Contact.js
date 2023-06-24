@@ -2,7 +2,7 @@ import React, {useRef} from "react";
 import {useState} from "react";
 import NavBar from "../components/Navbar";
 import './Contact.css';
-import emailjs from '@emailjs-com'; 
+import emailjs from '@emailjs/browser';
 import FacebookLogo from '../pictures/FacebookLogo.svg';
 import InstagramLogo from '../pictures/InstagramLogo.svg';
 import FacebookGold from '../pictures/FacebookLogoGold.svg';
