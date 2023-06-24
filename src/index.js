@@ -8,11 +8,11 @@ import Discography from './pages/Discography';
 import Contact from './pages/Contact';
 
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
