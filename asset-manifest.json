@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/skhizma/static/css/main.b6f66f45.css",
+    "main.js": "/skhizma/static/js/main.ce2e8b62.js",
+    "static/media/hwsRavnoteza.png": "/skhizma/static/media/hwsRavnoteza.e6abef8ac812733be750.png",
+    "static/media/hwsTop50.png": "/skhizma/static/media/hwsTop50.b07454807dea7b6644e9.png",
+    "static/media/jelenRavnoteza.png": "/skhizma/static/media/jelenRavnoteza.b7f1e83dd496307b6f9d.png",
+    "static/media/gitarijada.png": "/skhizma/static/media/gitarijada.4d71e360f3da85de3d21.png",
+    "static/media/hwsMetak.png": "/skhizma/static/media/hwsMetak.0c77eb3ebc699920de5a.png",
+    "static/media/jelenTop10.png": "/skhizma/static/media/jelenTop10.46e5e27f9d11756e8ab8.png",
+    "static/media/jelenMetak.png": "/skhizma/static/media/jelenMetak.bac67e2b76f4c74ad79a.png",
+    "static/media/GroupPhoto.jpg": "/skhizma/static/media/GroupPhoto.06de14524da3de0dbabb.jpg",
+    "static/media/LogoWhite.png": "/skhizma/static/media/LogoWhite.2fe2cc6c974a41a924d9.png",
+    "static/media/InstagramLogoGold.svg": "/skhizma/static/media/InstagramLogoGold.2e88bae091c43968c5140d8be8a0893f.svg",
+    "static/media/InstagramLogo.svg": "/skhizma/static/media/InstagramLogo.fad01b69ec584ef2699e40a358fb0271.svg",
+    "static/media/iTunesGold.svg": "/skhizma/static/media/iTunesGold.2ce5dd039d3605bcb5cabc080443a0e1.svg",
+    "static/media/iTunes.svg": "/skhizma/static/media/iTunes.b6e8b5ebee9723d70c2460914cf55f94.svg",
+    "static/media/SpotifyGold.svg": "/skhizma/static/media/SpotifyGold.a3ae7bc4080cad50d2d4cdbec1d50705.svg",
+    "static/media/TwoLines.svg": "/skhizma/static/media/TwoLines.50302237024a84321faf731e7a9a3a07.svg",
+    "static/media/Spotify.svg": "/skhizma/static/media/Spotify.df65778db1bc0cef2c67f700010177c0.svg",
+    "static/media/BandcampLogoGold.svg": "/skhizma/static/media/BandcampLogoGold.60a59949d88be5c709fb156098ec49fe.svg",
+    "static/media/BandcampLogo.svg": "/skhizma/static/media/BandcampLogo.efe6c0ed86d7e3de6c144c079d2f6fd4.svg",
+    "static/media/SoundCloudGold.svg": "/skhizma/static/media/SoundCloudGold.901105a84b3bc2d98aec83c68293304f.svg",
+    "static/media/FacebookLogoGold.svg": "/skhizma/static/media/FacebookLogoGold.a5e6932d08d9194c7e8db46ab3fa691d.svg",
+    "static/media/SoundCloud.svg": "/skhizma/static/media/SoundCloud.cebf09188176c8419eae318d3aa8d747.svg",
+    "static/media/FacebookLogo.svg": "/skhizma/static/media/FacebookLogo.654c0a6ee537731e5cc07dc0124d8f9e.svg",
+    "index.html": "/skhizma/index.html",
+    "static/media/YouTubeGold.svg": "/skhizma/static/media/YouTubeGold.b437f9166bdab5be03c7e0080e0bbb97.svg",
+    "static/media/YouTube.svg": "/skhizma/static/media/YouTube.32a98402dd66866be9b3ada584ff6bc4.svg",
+    "main.b6f66f45.css.map": "/skhizma/static/css/main.b6f66f45.css.map",
+    "main.ce2e8b62.js.map": "/skhizma/static/js/main.ce2e8b62.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6f66f45.css",
+    "static/js/main.ce2e8b62.js"
+  ]
+}
