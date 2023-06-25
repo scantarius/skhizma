@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import NavBar from './components/Navbar';
+import MobileNavbar from './components/MobileNavbar';
 import Footer from './components/Footer';
 import Logo from './pictures/LogoWhite.png';
 
@@ -8,6 +9,7 @@ function App() {
   return (
     <>
     <NavBar />
+    <MobileNavbar />
       <main>
         <div className='about'>
           <h2>Članovi benda navode da vole da eksperimentišu, da mnogi muzički pravci i bendovi utiču na njih, 

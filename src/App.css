@@ -21,14 +21,16 @@ body {
   background-color: var(--purple); 
 }
 
-header {
+#menu {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .title {
+  display: flex;
+  justify-content: flex-start;
   background: -webkit-linear-gradient(left, var(--gold1), var(--gold3) , var(--gold5));
   background-size: 1600px 200px;
   -webkit-background-clip: text;
@@ -48,8 +50,10 @@ header {
   }
 }
 
-.menu {
+.nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   margin-left: 50px;
   margin-right: 50px;
@@ -64,11 +68,11 @@ a {
   color: var(--gold1);
 }
 
-.menu a {
+.nav a {
   position: relative;
 }
 
-.menu a::after {
+.nav a::after {
   content: '';
   position: absolute;
   height: 1px;
@@ -79,7 +83,7 @@ a {
   transition: width .2s;
 }
 
-.menu a:hover:after {
+.nav a:hover:after {
   width: 100%;
 }
 
@@ -96,6 +100,10 @@ a {
   width: 0;
   background: var(--gold2);
   width: 100%;
+}
+
+#mobileMenu {
+  display: none;
 }
 
 /* Home */
@@ -176,7 +184,7 @@ footer h2 {
 /* Responsivity */
 
 @media (width = 2560px) {
-  .menu {
+  .nav {
     font-size: 48px;
   }
 
@@ -213,7 +221,7 @@ footer h2 {
 
 
 @media (width = 1024px) {
-  .menu {
+  .nav {
     margin: auto;
   }
 
@@ -229,7 +237,7 @@ footer h2 {
 }
 
 @media (width <= 768px) {
-  .menu {
+  .nav {
     justify-content: center;
     margin-left: 50px;
   }
@@ -254,6 +262,21 @@ footer h2 {
 }
 
 @media (width < 426px) {
+  .nav,
+  .active {
+    display: none;
+  }
+
+  #mobileMenu {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #mobileMenu > a > img {
+    width: 30px;
+    height: 30px;
+  }
+
   footer {
     flex-wrap: wrap;
     justify-content: center;

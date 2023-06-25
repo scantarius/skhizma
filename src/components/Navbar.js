@@ -5,13 +5,18 @@ import {Link} from "react-router-dom";
 function NavBar() {
     return (
         <header>
-            <Link to='/' className='title'>SKHIZMA</Link>
-                <div className='menu'>
-                    <NavLink to='/'>Početna</NavLink>
-                    <NavLink to='/about'>O Nama</NavLink>
-                    <NavLink to='/news'>Vijesti</NavLink>
-                    <NavLink to='/discography'>Diskografija</NavLink>
-                    <NavLink to='/contact'>Kontakt</NavLink>
+                <div id='menu'>
+                    <div className="navLogo">
+                        <Link to='/' className='title'>SKHIZMA</Link>
+                    </div>
+
+                    <div className="nav">
+                        <NavLink to='/'>Početna</NavLink>
+                        <NavLink to='/about'>O Nama</NavLink>
+                        <NavLink to='/news'>Vijesti</NavLink>
+                        <NavLink to='/discography'>Diskografija</NavLink>
+                        <NavLink to='/contact'>Kontakt</NavLink>
+                    </div>
                 </div>
         </header>
     )
