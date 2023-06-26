@@ -113,7 +113,7 @@
     }
 }
 
-@media (width < 426px) {
+@media (width <= 426px) {
     #about {
         margin-top: 50px;
         color: #fff;

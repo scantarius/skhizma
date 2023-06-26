@@ -40,7 +40,7 @@
     }
 }
 
-@media (width < 426px) {
+@media (width <= 426px) {
     #spotify {
         flex-wrap: wrap;
         gap: 50px;

@@ -155,7 +155,7 @@ input:focus {
     }
 }
 
-@media (width < 426px) {
+@media (width <= 426px) {
     #social {
         margin-top: 0px;
     }
