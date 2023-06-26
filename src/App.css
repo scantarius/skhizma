@@ -279,7 +279,7 @@ footer h2 {
   }
 }
 
-@media (width < 426px) {
+@media (width <= 426px) {
   main {
     margin-top: 50px;
   }
