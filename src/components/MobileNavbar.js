@@ -14,7 +14,6 @@ import ContactIcon from '../pictures/mobile/contactIcon.png';
 import ContactFill from '../pictures/mobile/contactFill.png';
 
 function MobileNavbar() {
-
     const [Home, setHome] = useState(true);
     const toggleHome = () => setHome(!Home);
 
@@ -28,13 +27,13 @@ function MobileNavbar() {
     const toggleDiscography = () => setDiscography(!Discography);
 
     const [Contact, setContact] = useState(true);
-    const toggleContact = () => setContact(!Contact);
- 
+    const toggleContact = () => setContact(false)
+
     return (
         <nav>
             <div id='mobileMenu'>
                     <Link to='/'>
-                        <img src={Home ? HomeIcon : HomeFill} alt='home-icon' onMouseEnter={toggleHome}/>
+                        <img src={Home ? HomeIcon : HomeFill} alt='home-icon' onClick={toggleHome} />
                     </Link>
                     <Link to='/about'>
                         <img src={About ? AboutIcon : AboutFill} alt='about-icon' onClick={toggleAbout} />
@@ -43,7 +42,7 @@ function MobileNavbar() {
                         <img src={News ? NewsIcon : NewsFill} alt='about-icon' onClick={toggleNews} />
                     </Link>
                     <Link to='/discography'>
-                        <img src={Discography ? DiscographyIcon : DiscographyFill} alt='about-icon' onClick={toggleDiscography} />
+                        <img src={Discography ? DiscographyIcon : DiscographyFill} alt='about-icon' onClick={toggleDiscography}/>
                     </Link>
                     <Link to='/contact'>
                         <img src={Contact ? ContactIcon : ContactFill} alt='about-icon' onClick={toggleContact} />

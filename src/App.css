@@ -106,6 +106,19 @@ a {
   display: none;
 }
 
+#mobileMenu a:active {
+  animation: navigationAnimation 2s forwards alternate;
+}
+
+@keyframes navigationAnimation {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50px);
+  }
+}
+
 /* Home */
 
 main {
@@ -184,8 +197,13 @@ footer h2 {
 /* Responsivity */
 
 @media (width = 2560px) {
+  #menu {
+    margin-top: 50px;
+  }
+
+  .navLogo a,
   .nav {
-    font-size: 48px;
+    font-size: 52px;
   }
 
   main {
@@ -262,6 +280,10 @@ footer h2 {
 }
 
 @media (width < 426px) {
+  main {
+    margin-top: 50px;
+  }
+
   .nav,
   .active {
     display: none;

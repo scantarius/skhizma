@@ -1,25 +1,18 @@
-import React, {useState} from "react";
+import React from "react";
 import NavBar from "../components/Navbar";
 import MobileNavbar from "../components/MobileNavbar";
 import './About.css';
 import GroupPhoto from '../pictures/GroupPhoto.jpg';
 
 function About() {
-
-    const [hovered, setHovered] = useState(false);
-    const toggleHover = () => setHovered(!hovered);
-
     return (
         <>
         <NavBar />
             <MobileNavbar />
-                <section id="about">
-                    <div className='aboutWrapper'
-                        onMouseEnter={toggleHover} 
-                        onMouseLeave={toggleHover}>
-                        <img className='groupPhoto' src={GroupPhoto} alt="Logo" />
-                            <span className="hoverMe">〚 Zadrži 〛</span>
-                                <h2 className={hovered ? 'aboutDescriptionOpen' : 'aboutDescriptionClosed'}>
+                    <section id="about">
+                        <div className='aboutWrapper'>
+                            <img className='groupPhoto' src={GroupPhoto} alt="Logo" />
+                                <h2 className="aboutDescription">
                                     Skhizma - Autorski bend iz Prijedora koji je nastao 2021 godine.<br />
                                     Sastav čine:<br />
                                     Ivan Saničanin – bas<br />
@@ -42,8 +35,8 @@ function About() {
                                         href='https://highwaystarmagazine.org' 
                                         target="_blank" rel="noreferrer"> Highwaystar Magazin.</a>
                                 </h2>
-                    </div>
-                </section>
+                        </div>
+                    </section>
         </>
     )
 }

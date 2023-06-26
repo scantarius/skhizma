@@ -109,12 +109,16 @@ input:focus {
     .formInput {
         transform: scale(1.5);
     }
+
+    #successfullySent span {
+        font-size: 100px;
+    }
 }
 
 
 @media (width <= 1024px) {
     #social {
-        margin: 100px 0 100px 0;
+        margin: 50px 0 50px 0;
     }
 
     .twoLines {
@@ -128,6 +132,7 @@ input:focus {
     #social {
         flex-direction: column;
         align-items: center;
+        margin-top: 0px;
     }
 
     input,
@@ -144,10 +149,22 @@ input:focus {
     .twoLines {
         left: -20%;
     }
+
+    #successfullySent span {
+        font-size: 24px;
+    }
 }
 
-@media (width <= 426px) {
+@media (width < 426px) {
+    #social {
+        margin-top: 0px;
+    }
+
     .twoLines {
         left: -30%;
+    }
+
+    #successfullySent span {
+        font-size: 24px;
     }
 }

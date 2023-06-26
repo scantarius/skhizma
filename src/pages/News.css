@@ -75,7 +75,23 @@
     }
 }
 
+@media (width <= 1440px) {
+    #news {
+        margin-top: -50px;
+    }
+}
+
+@media (width <= 1024px) {
+    #news {
+        margin-top: -50px;
+    }
+}
+
 @media (width <= 426px) {
+    #news {
+        margin-top: -90px;
+    }
+
     #news > div {
         display: flex;
         justify-content: center;

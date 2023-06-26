@@ -33,55 +33,39 @@
   inherits: false;
 }
 
-.hoverMe {
-    visibility: visible;
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20%;
-    text-align: center;
-    color: #fff;
-    font-size: 32px;
-    font-family: 'Lobster', sans-serif;
-    transition: all 1s;
-}
-
-.aboutWrapper h2 {
-    font-family: 'Poppins', sans-serif;
-}
-
 .cirithUngol,
 .highwaystarMagazine {
-    outline: #fff;
-    text-shadow: -1px -1px var(--gold3), -1px 1px var(--gold3), -1px 1px 0 var(--gold3);
+    color: var(--gold3);
 }
 
-.aboutDescriptionOpen {
+.aboutDescription {
     max-width: 90%;
     position: absolute;
     top: 10px;
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
-    transition: all 1s;
-}
-
-.aboutDescriptionClosed {
-    max-width: 90%;
-    position: absolute;
-    top: 10px;
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1s;
-}
-
-#about:hover {
     color: #fff;
-    .hoverMe {
+    font-family: 'Poppins', sans-serif;
+    animation: descriptionAnimation 1s;
+}
+
+@keyframes descriptionAnimation {
+    from {
+        max-width: 90%;
+        position: absolute;
+        top: 10px;
         opacity: 0;
-        transition: all 1s;
+        filter: blur(5px);
+        transform: translateX(-100%);
+    }
+    to {
+        max-width: 90%;
+        position: absolute;
+        top: 10px;
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
     }
 }
 
@@ -92,15 +76,9 @@
         margin-top: 200px;
     }
 
-    .aboutDescriptionOpen,
-    .aboutDescriptionClosed {
-        top: 8%;
+    .aboutDescription {
         font-size: 38px;
-    }
-
-    .hoverMe {
-        font-size: 48px;
-        top: 80%;
+        margin-top: 50px;
     }
 }
 
@@ -108,59 +86,34 @@
     #about {
         margin-top: 50px;
     }
-
-    .aboutDescriptionOpen,
-    .aboutDescriptionClosed {
-        top: 8%;
-        font-size: 20px;
-    }
-
-    .hoverMe {
-        font-size: 28px;
-        top: 80%;
-    }
 }
-
 
 @media (width <= 1024px) {
     #about {
-        margin-top: 50px;
+        margin: 50px 0 50px 0;
     }
 
-    .aboutDescriptionOpen,
-    .aboutDescriptionClosed {
-        top: 4%;
+    .aboutDescription {
         font-size: 16px;
-    }
-
-    .hoverMe {
-        font-size: 20px;
-        top: 70%;
+        margin-top: 10px;
     }
 }
 
 @media (width = 768px) {
     #about {
-        margin-top: 50px;
+        margin: 50px 0 50px 0;
     }
 
     .aboutWrapper {
         width: 100%;
     }
 
-    .aboutDescriptionOpen,
-    .aboutDescriptionClosed {
-        top: 4%;
+    .aboutDescription {
         font-size: 20px;
-    }
-
-    .hoverMe {
-        font-size: 24px;
-        top: 90%;
     }
 }
 
-@media (width <= 426px) {
+@media (width < 426px) {
     #about {
         margin-top: 50px;
         color: #fff;
@@ -168,23 +121,11 @@
 
     .aboutWrapper {
         width: 100%;
-        height: 100vh;
     }
 
-    .aboutDescriptionOpen,
-    .aboutDescriptionClosed {
-        max-width: 90%;
-        top: 10px;
-        opacity: 1;
-        filter: blur(0);
-        transform: translateX(0);
-        transition: all 1s;
-        top: 40%;
-        font-size: 20px;
-    }
-
-    .hoverMe {
-        visibility: hidden;
+    .aboutDescription {
+        margin-top: 270px;
+        padding: 0 0 50px 0;
     }
 }
   
