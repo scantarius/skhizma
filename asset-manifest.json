@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/skhizma/static/css/main.d39dd15a.css",
+    "main.css": "/skhizma/static/css/main.524b7bd4.css",
     "main.js": "/skhizma/static/js/main.ccb5ab0a.js",
     "static/media/hwsRavnoteza.png": "/skhizma/static/media/hwsRavnoteza.e6abef8ac812733be750.png",
     "static/media/hwsTop50.png": "/skhizma/static/media/hwsTop50.b07454807dea7b6644e9.png",
@@ -27,11 +27,11 @@
     "index.html": "/skhizma/index.html",
     "static/media/YouTubeGold.svg": "/skhizma/static/media/YouTubeGold.b437f9166bdab5be03c7e0080e0bbb97.svg",
     "static/media/YouTube.svg": "/skhizma/static/media/YouTube.32a98402dd66866be9b3ada584ff6bc4.svg",
-    "main.d39dd15a.css.map": "/skhizma/static/css/main.d39dd15a.css.map",
+    "main.524b7bd4.css.map": "/skhizma/static/css/main.524b7bd4.css.map",
     "main.ccb5ab0a.js.map": "/skhizma/static/js/main.ccb5ab0a.js.map"
   },
   "entrypoints": [
-    "static/css/main.d39dd15a.css",
+    "static/css/main.524b7bd4.css",
     "static/js/main.ccb5ab0a.js"
   ]
 }
