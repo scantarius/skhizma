@@ -10,8 +10,7 @@ import iTunesLogoHover from '../pictures/iTunesGold.svg';
 import BandcampLogo from '../pictures/BandcampLogo.svg';
 import BandcampLogoHover from '../pictures/BandcampLogoGold.svg';
 
-
-function NavBar() {
+function Footer() {
     const [YouTube, setYouTube] = useState(false);
     const [Spotify, setSpotify] = useState(false);
     const [SoundCloud, setSoundCloud] = useState(false);
@@ -49,4 +48,4 @@ function NavBar() {
     )
 }
 
-export default NavBar;
+export default Footer;

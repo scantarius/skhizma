@@ -8,7 +8,6 @@
     display: flex;
     justify-content: center;
     width: 60%;
-    height: 70vh;
     position: relative;
 }
 
@@ -42,31 +41,8 @@
     max-width: 90%;
     position: absolute;
     top: 10px;
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
     color: #fff;
     font-family: 'Poppins', sans-serif;
-    animation: descriptionAnimation 1s;
-}
-
-@keyframes descriptionAnimation {
-    from {
-        max-width: 90%;
-        position: absolute;
-        top: 10px;
-        opacity: 0;
-        filter: blur(5px);
-        transform: translateX(-100%);
-    }
-    to {
-        max-width: 90%;
-        position: absolute;
-        top: 10px;
-        opacity: 1;
-        filter: blur(0);
-        transform: translateX(0);
-    }
 }
 
 /* Responsivity */

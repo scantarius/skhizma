@@ -6,6 +6,11 @@
     scroll-behavior: smooth;
 }
 
+#news img {
+    background-color: #252525;
+    border-radius: 10px;
+}
+
 .active {
     visibility: visible;
     opacity: 1;

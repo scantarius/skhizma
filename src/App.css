@@ -21,6 +21,8 @@ body {
   background-color: var(--purple); 
 }
 
+/* Menu */
+
 #menu {
   display: flex;
   align-items: center;
@@ -106,79 +108,6 @@ a {
   display: none;
 }
 
-#mobileMenu a:active {
-  animation: navigationAnimation 2s forwards alternate;
-}
-
-@keyframes navigationAnimation {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-50px);
-  }
-}
-
-/* Home */
-
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 200px;
-  margin: 50px;
-}
-
-.about {
-  display: flex;
-  text-align: left;
-  position: relative;
-  border: 2px solid var(--gold3);
-  height: auto;
-  border-image: 
-    linear-gradient(
-      to bottom, 
-      var(--gold3), 
-      rgba(0, 0, 0, 0)
-    ) 1 100%;
-}
-
-.about h2 {
-  margin: 50px 50px 0 50px;
-  color: #fff;
-  font-size: 24px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.readMore {
-  position: absolute;
-  bottom: -20%;
-  right: 5%;
-  font-size: 24px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.readMore::after {
-  content: '';
-  position: absolute;
-  height: 1px;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  background: var(--gold2);
-  transition: width .2s;
-}
-
-.readMore:hover:after {
-  width: 100%;
-}
-
-.logo {
-  width: 350px;
-  height: 350px;
-  z-index: -1;
-}
-
 /* Footer */
 
 footer {
@@ -203,28 +132,15 @@ footer h2 {
 
   .navLogo a,
   .nav {
-    font-size: 52px;
-  }
-
-  main {
-    margin: 300px 200px auto 200px;
-    gap: 30%;
-  }
-
-  .about h2,
-  .about a {
-    font-size: 48px;
-  }
-
-  .logo {
-    transform: scale(1.3);
+    font-size: 64px;
   }
 
   footer {
     position: fixed;
-    bottom: 0;
-    right: 0;
-    margin-right: 200px;
+    bottom: 5%;
+    right: 5%;
+    margin: 50px 180px;
+    padding: 0;
     transform: scale(1.3);
   }
 }
@@ -237,16 +153,9 @@ footer h2 {
   }
 }
 
-
 @media (width = 1024px) {
   .nav {
     margin: auto;
-  }
-
-  .logo {
-    position: relative;
-    top: 0;
-    right: 0;
   }
 
   footer {
@@ -260,32 +169,14 @@ footer h2 {
     margin-left: 50px;
   }
 
-  main {
-    width: 80%;
-    flex-wrap: wrap;
-    margin: auto;
-    height: auto;
-    margin-top: 100px;
-  }
-
-  .logo {
-    position: relative;
-    top: 0;
-    right: 0;
-  }
-
   footer {
     margin-top: 100px;
   }
 }
 
 @media (width <= 426px) {
-  main {
-    margin-top: 50px;
-  }
-
   .nav,
-  .active {
+  .nav active {
     display: none;
   }
 

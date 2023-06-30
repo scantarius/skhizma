@@ -1,24 +1,54 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
 import {Link} from "react-router-dom";
+import {motion} from 'framer-motion';
 
 function NavBar() {
     return (
-        <header>
-                <div id='menu'>
-                    <div className="navLogo">
-                        <Link to='/' className='title'>SKHIZMA</Link>
-                    </div>
+        <>
+        <nav id="menu">
+            <div className="navLogo">
+                <Link to='/' className='title'>SKHIZMA</Link>
+            </div>
 
-                    <div className="nav">
-                        <NavLink to='/'>Početna</NavLink>
-                        <NavLink to='/about'>O Nama</NavLink>
-                        <NavLink to='/news'>Vijesti</NavLink>
-                        <NavLink to='/discography'>Diskografija</NavLink>
-                        <NavLink to='/contact'>Kontakt</NavLink>
-                    </div>
-                </div>
-        </header>
+            <div className="nav">
+                <NavLink to='/'>
+                    <motion.div
+                        whileTap={{y: "-100%", transition: "0.5s"}}>
+                        Početna
+                    </motion.div>
+                </NavLink>
+
+                <NavLink to='/about'>
+                    <motion.div
+                        whileTap={{y: "-100%", transition: "0.5s"}}>
+                        O Nama
+                    </motion.div>
+                </NavLink>
+
+                <NavLink to='/news'>
+                    <motion.div
+                        whileTap={{y: "-100%", transition: "0.5s"}}>
+                        Vijesti
+                    </motion.div>
+                </NavLink>
+
+                <NavLink to='/discography'>
+                    <motion.div
+                        whileTap={{y: "-100%", transition: "0.5s"}}>
+                        Diskografija
+                    </motion.div>
+                </NavLink>
+
+                <NavLink to='/contact'>
+                    <motion.div
+                        whileTap={{y: "-100%", transition: "0.5s"}}>
+                        Kontakt
+                    </motion.div>
+                </NavLink>
+            </div>
+        </nav>
+        </>
     )
 }
 

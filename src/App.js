@@ -1,29 +1,33 @@
 import React from 'react';
 import './App.css';
+import {Route, Routes} from "react-router-dom";
+//import {BrowserRouter as Router} from 'react-router-dom';
+import {HashRouter as Router} from 'react-router-dom';
+import {AnimatePresence} from "framer-motion";
 import NavBar from './components/Navbar';
 import MobileNavbar from './components/MobileNavbar';
-import Footer from './components/Footer';
-import Logo from './pictures/LogoWhite.png';
+import Home from './pages/Home';
+import About from './pages/About';
+import News from './pages/News';
+import Discography from './pages/Discography';
+import Contact from './pages/Contact';
 
 function App() {
   return (
     <>
-    <NavBar />
-    <MobileNavbar />
-      <main>
-        <div className='about'>
-          <h2>Članovi benda navode da vole da eksperimentišu, da mnogi muzički pravci i bendovi utiču na njih, 
-              ali da ne žele mnogo žanrovski da se određuju. Svoj muzički stil bi opisali kao rock, metal i funk..</h2>
-              <a className='readMore' 
-                  href='https://jelenmusicshow.com/bend-skhizma-izdao-prvi-autorski-singl/' 
-                  target="_blank" rel="noreferrer">Pročitaj više:</a>
-        </div>
-
-        <div className='logo'>
-          <img className='logo' src={Logo} alt="Logo" />
-        </div>
-      </main>
-    <Footer />
+    <AnimatePresence>
+      <Router>
+        <NavBar />
+        <MobileNavbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/discography" element={<Discography />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+      </Router>
+    </AnimatePresence>
     </>
   );
 }
