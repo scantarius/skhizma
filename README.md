@@ -1,3 +1,5 @@
+![localhost_3000_ (1)](https://github.com/scantarius/skhizma/assets/32017278/3abb9c44-2455-4a8c-8729-e90e990ac91b)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
