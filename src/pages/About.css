@@ -1,107 +1,112 @@
 #about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .aboutWrapper {
-    display: flex;
-    justify-content: center;
-    width: 60%;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  position: relative;
 }
 
 .groupPhoto {
-    max-width: 100%;
-    position: absolute;
-    --angle: 0deg;
-	border: 4px solid;
-	border-image: linear-gradient(var(--angle), var(--gold3), var(--gold4), var(--purple)) 1;
-	animation: 5s rotate linear infinite;
+  max-width: 100%;
+  position: absolute;
+  --angle: 0deg;
+  border: 4px solid;
+  border-image: linear-gradient(
+      var(--angle),
+      var(--gold3),
+      var(--gold4),
+      var(--purple)
+    )
+    1;
+  animation: 5s rotate linear infinite;
 }
 
 @keyframes rotate {
-	to {
-		--angle: 360deg;
-	}
+  to {
+    --angle: 360deg;
+  }
 }
 
 @property --angle {
-  syntax: '<angle>';
+  syntax: "<angle>";
   initial-value: 0deg;
   inherits: false;
 }
 
 .cirithUngol,
 .highwaystarMagazine {
-    color: var(--gold3);
+  color: var(--gold3);
 }
 
 .aboutDescription {
-    max-width: 90%;
-    position: absolute;
-    top: 10px;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
+  max-width: 90%;
+  position: absolute;
+  top: 10px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Responsivity */
 
 @media (width = 2560px) {
-    #about {
-        margin-top: 200px;
-    }
+  #about {
+    margin-top: 200px;
+  }
 
-    .aboutDescription {
-        font-size: 38px;
-        margin-top: 50px;
-    }
+  .aboutDescription {
+    font-size: 38px;
+    margin-top: 50px;
+  }
 }
 
 @media (width <= 1440px) {
-    #about {
-        margin-top: 50px;
-    }
+  #about {
+    margin-top: 50px;
+  }
 }
 
 @media (width <= 1024px) {
-    #about {
-        margin: 50px 0 50px 0;
-    }
+  #about {
+    margin: 50px 0 50px 0;
+  }
 
-    .aboutDescription {
-        font-size: 16px;
-        margin-top: 10px;
-    }
+  .aboutDescription {
+    font-size: 16px;
+    margin-top: 10px;
+  }
 }
 
 @media (width = 768px) {
-    #about {
-        margin: 50px 0 50px 0;
-    }
+  #about {
+    margin: 50px 0 50px 0;
+  }
 
-    .aboutWrapper {
-        width: 100%;
-    }
+  .aboutWrapper {
+    width: 100%;
+  }
 
-    .aboutDescription {
-        font-size: 20px;
-    }
+  .aboutDescription {
+    font-size: 20px;
+  }
 }
 
 @media (width <= 426px) {
-    #about {
-        margin-top: 50px;
-        color: #fff;
-    }
+  #about {
+    margin-top: 50px;
+    color: #fff;
+  }
 
-    .aboutWrapper {
-        width: 100%;
-    }
+  .aboutWrapper {
+    width: 100%;
+  }
 
-    .aboutDescription {
-        margin-top: 270px;
-        padding: 0 0 50px 0;
-    }
+  .aboutDescription {
+    margin-top: 270px;
+    padding: 0 0 50px 0;
+  }
 }
-  

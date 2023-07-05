@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
 
 :root {
   --purple: #22223b;
@@ -17,8 +17,8 @@
   box-sizing: border-box;
 }
 
-body { 
-  background-color: var(--purple); 
+body {
+  background-color: var(--purple);
 }
 
 /* Menu */
@@ -33,22 +33,27 @@ body {
 .title {
   display: flex;
   justify-content: flex-start;
-  background: -webkit-linear-gradient(left, var(--gold1), var(--gold3) , var(--gold5));
+  background: -webkit-linear-gradient(
+    left,
+    var(--gold1),
+    var(--gold3),
+    var(--gold5)
+  );
   background-size: 1600px 200px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 50px 0 50px 50px;
   font-size: 48px;
-  font-family: 'Gochi Hand', sans-serif;
+  font-family: "Gochi Hand", sans-serif;
   animation: titleAnimation 2s infinite forwards;
 }
 
 @keyframes titleAnimation {
   0% {
-      background-position: 0 1600px;
+    background-position: 0 1600px;
   }
   100% {
-      background-position: 1600px 0;
+    background-position: 1600px 0;
   }
 }
 
@@ -61,7 +66,7 @@ body {
   margin-right: 50px;
   gap: 60px;
   font-size: 32px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   position: relative;
 }
 
@@ -75,14 +80,14 @@ a {
 }
 
 .nav a::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 1px;
   left: 0;
   bottom: 0;
   width: 0;
   background: var(--gold2);
-  transition: width .2s;
+  transition: width 0.2s;
 }
 
 .nav a:hover:after {
@@ -94,7 +99,7 @@ a {
 }
 
 .active::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 1px;
   left: 0;
@@ -120,7 +125,7 @@ footer {
 footer h2 {
   margin-right: 10px;
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Responsivity */

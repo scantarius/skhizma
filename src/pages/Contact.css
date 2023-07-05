@@ -1,170 +1,175 @@
 #social {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
-.socialMedia h1,
+.socialMedia,
 label {
-    font-family: 'Poppins', sans-serif;
-    color: var(--gold3);
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: var(--gold3);
 }
 
 .socialMedia h1 {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.socialMedia img {
+  padding: 0 20px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 input,
 .finish,
 textarea {
-    width: 400px;
-    height: 50px;
-    padding: 10px;
-    background: transparent;
-    color: #fff;
-    border: 1px solid var(--gold3);
-    transition: all 2s;
+  width: 400px;
+  height: 50px;
+  padding: 10px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid var(--gold3);
+  transition: all 2s;
 }
 
 textarea {
-    resize: none;
+  resize: none;
 }
 
 .finish:hover {
-    cursor: pointer;
-    background: var(--gold3);
+  cursor: pointer;
+  background: var(--gold3);
 }
 
 .msgInput {
-    height: 150px;
+  height: 150px;
 }
 
 input:focus {
-    border: 1px solid var(--gold3);
+  border: 1px solid var(--gold3);
 }
 
 #successfullySent span {
-    position: fixed;
-    bottom: 5%;
-    left: 0;
-    background-color: var(--gold3);
-    color: #fff;
-    font-size: 48px;
-    font-family: 'Lobster', sans-serif;
-    padding: 0 10px 0 10px;
-    text-shadow: 1px 1px 2px #fff;
-    clip-path: polygon(
-      0% 0%,
-      calc(-20% - 8px) 0,
-      100% 8px,
-      100% 100%,
-      95% 100%,
-      calc(-20% + 8px) 100%,
-      0% calc(100% - 8px),
-      0% calc(100% + 8px)
-    );
+  position: fixed;
+  bottom: 5%;
+  left: 0;
+  background-color: var(--gold3);
+  color: #fff;
+  font-size: 48px;
+  font-family: "Lobster", sans-serif;
+  padding: 0 10px 0 10px;
+  text-shadow: 1px 1px 2px #fff;
+  clip-path: polygon(
+    0% 0%,
+    calc(-20% - 8px) 0,
+    100% 8px,
+    100% 100%,
+    95% 100%,
+    calc(-20% + 8px) 100%,
+    0% calc(100% - 8px),
+    0% calc(100% + 8px)
+  );
 }
 
 .approved {
-    visibility: visible;
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-    transition: all 0.5s;
+  visibility: visible;
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 0.5s;
 }
 
 .hidden {
-    visibility: hidden;
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 0.5s;
 }
 
 .twoLines {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    opacity: 0.3;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.3;
 }
 
 /* Responsivity */
 
 @media (width > 2559px) {
-    #social {
-        margin-top: 200px;
-    }
+  #social {
+    margin-top: 200px;
+  }
 
-    .socialMedia,
-    .formInput {
-        transform: scale(1.5);
-    }
+  .socialMedia,
+  .formInput {
+    transform: scale(1.5);
+  }
 
-    #successfullySent span {
-        font-size: 100px;
-    }
+  #successfullySent span {
+    font-size: 100px;
+  }
 }
 
-
 @media (width <= 1024px) {
-    #social {
-        margin: 50px 0 50px 0;
-    }
+  #social {
+    margin: 50px 0 50px 0;
+  }
 
-    .twoLines {
-        transform: scale(0.7);
-        left: -10%;
-        bottom: -20%;
-    }
+  .twoLines {
+    transform: scale(0.7);
+    left: -10%;
+    bottom: -20%;
+  }
 }
 
 @media (width <= 768px) {
-    #social {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 0px;
-    }
+  #social {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+  }
 
-    input,
-    .finish,
-    textarea {
-        width: auto;
-        height: auto;
-    }
+  input,
+  .finish,
+  textarea {
+    width: auto;
+    height: auto;
+  }
 
-    .socialMedia {
-        margin: 50px 0 50px 0;
-    }
+  .socialMedia {
+    margin: 50px 0 50px 0;
+  }
 
-    .twoLines {
-        left: -20%;
-    }
+  .twoLines {
+    left: -20%;
+  }
 
-    #successfullySent span {
-        font-size: 24px;
-    }
+  #successfullySent span {
+    font-size: 24px;
+  }
 }
 
 @media (width <= 426px) {
-    #social {
-        margin-top: 0px;
-    }
+  #social {
+    margin-top: 0px;
+  }
 
-    .twoLines {
-        left: -30%;
-    }
+  .twoLines {
+    left: -30%;
+  }
 
-    #successfullySent span {
-        font-size: 24px;
-    }
+  #successfullySent span {
+    font-size: 24px;
+  }
 }

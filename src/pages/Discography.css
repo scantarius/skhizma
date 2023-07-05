@@ -1,67 +1,66 @@
 #spotify {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 50px;
-    border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+  border-radius: 12px;
 }
 
 iframe {
-    background-color: #252525;
-    border-radius: 30px;
+  background-color: #252525;
+  border-radius: 30px;
 }
 
 .moreSoon {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-    color: var(--gold3);
-    overflow: hidden;
-    transition: 1s;
-    animation: textAnimation 2s infinite;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: var(--gold3);
+  overflow: hidden;
+  transition: 1s;
+  animation: textAnimation 2s infinite;
 }
 
 @keyframes textAnimation {
-    from {
-        text-shadow: 0 0 var(--gold3), 0 1.2em #fff;
-    }
-    to {
-        text-shadow: 0 -1.2em var(--gold3), 0 0 #fff;
-    }
+  from {
+    text-shadow: 0 0 var(--gold3), 0 1.2em #fff;
+  }
+  to {
+    text-shadow: 0 -1.2em var(--gold3), 0 0 #fff;
+  }
 }
 
 /* Responsivity */
 
 @media (width = 2560px) {
-    #spotify {
-        gap: 200px;
-    }
+  #spotify {
+    gap: 200px;
+  }
 
-    .moreSoon {
-        font-size: 48px;
-    }
+  .moreSoon {
+    font-size: 48px;
+  }
 }
 
 @media (width <= 426px) {
-    #spotify {
-        flex-wrap: wrap;
-        gap: 50px;
-        margin-top: 0px;
-    }
+  #spotify {
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 0px;
+  }
 
-    #spotify:nth-child(1) {
-        width: 100%;
-    }
-    
-    iframe {
-        width: 100%;
-    }
+  #spotify:nth-child(1) {
+    width: 100%;
+  }
 
-    .moreSoon {
-        padding: 50px 0 50px 0;
-    }
+  iframe {
+    width: 100%;
+  }
+
+  .moreSoon {
+    margin-bottom: 50px;
+  }
 }
-  
